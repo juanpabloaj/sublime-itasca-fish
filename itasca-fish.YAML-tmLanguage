@@ -1,0 +1,29 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Itasca Fish
+scopeName: source.f3dat
+fileTypes:
+- f3dat
+- f3fis
+- fis
+uuid: a4358a63-d396-4e0c-9b3d-f0de59021e43
+
+patterns:
+- match: \b(zone_head|z_extra|z_model|z_group|z_prop|z_next)\b
+  name: constant.language.f3dat
+- match: \b(plot|list|step)\b
+  name: constant.language.f3dat
+- match: \b(command|end_command|end|for|end_for|if|then|end_if|loop while|end_loop)\b
+  name: keyword.language.f3dat
+- match: (;)(?!\{).*$\n?
+  name: comment.language.f3dat
+- match: \s*(=|\*|\+|\^|\-|\/|\#)\s*
+  name: keyword.language.f3dat
+- match: \'\w+\'
+  name: string.language.f3dat
+- match: \@\w+
+  name: storage.type.variable.f3dat
+- match: (def)\s+([\w+_]+)$\n?
+  captures:
+    '1': {name: keyword.language.f3dat}
+    '2': {name: storage.type.function.f3dat}

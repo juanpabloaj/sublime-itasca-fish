@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>f3dat</string>
+		<string>f3fis</string>
+		<string>fis</string>
+	</array>
+	<key>name</key>
+	<string>Itasca Fish</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(zone_head|z_extra|z_model|z_group|z_prop|z_next)\b</string>
+			<key>name</key>
+			<string>constant.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(plot|list|step)\b</string>
+			<key>name</key>
+			<string>constant.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(command|end_command|end|for|end_for|if|then|end_if|loop while|end_loop)\b</string>
+			<key>name</key>
+			<string>keyword.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(;)(?!\{).*$\n?</string>
+			<key>name</key>
+			<string>comment.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s*(=|\*|\+|\^|\-|\/|\#)\s*</string>
+			<key>name</key>
+			<string>keyword.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\'\w+\'</string>
+			<key>name</key>
+			<string>string.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\@\w+</string>
+			<key>name</key>
+			<string>storage.type.variable.f3dat</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.language.f3dat</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.f3dat</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(def)\s+([\w+_]+)$\n?</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.f3dat</string>
+	<key>uuid</key>
+	<string>a4358a63-d396-4e0c-9b3d-f0de59021e43</string>
+</dict>
+</plist>
