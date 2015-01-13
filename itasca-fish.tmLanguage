@@ -80,6 +80,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\s*(&lt;|&gt;)\s*</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\s*&amp;$\n?</string>
 			<key>name</key>
 			<string>keyword.language.f3dat</string>

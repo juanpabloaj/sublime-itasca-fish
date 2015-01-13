@@ -31,6 +31,8 @@ patterns:
   name: comment.language.f3dat
 - match: \s*(=|\*|\+|\^|\-|\/|\#)\s*
   name: keyword.language.f3dat
+- match: \s*(<|>)\s*
+  name: keyword.operator.comparison.f3dat
 - match: \s*&$\n?
   name: keyword.language.f3dat
 - match: \'\w+\'
