@@ -80,6 +80,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\s*&amp;$\n?</string>
+			<key>name</key>
+			<string>keyword.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\'\w+\'</string>
 			<key>name</key>
 			<string>string.language.f3dat</string>
