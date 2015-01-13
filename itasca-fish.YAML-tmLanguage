@@ -17,12 +17,16 @@ patterns:
   name: constant.numeric.integer.decimal.f3dat
 - match: \b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore) \b
   name: constant.language.f3dat
-- match: \b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next|atan|exp|degrad|sqrt)\b
+- match: \b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next)\b
   name: constant.language.f3dat
-- match: \b(plot|list|step)\b
+- match: \b^\s*(plot|list|step|local)\b
   name: constant.language.f3dat
 - match: \b(command|end_command|end|for|end_for|if|then|end_if|loop while|end_loop)\b
   name: keyword.language.f3dat
+- match: \b\s*(abs|acos|and|asin|atan|atan2|cos|degrad|exp|grand|ln|log)[(]*\b
+  name: storage.type.function.f3dat
+- match: \b\s*(max|min|not|or|pi|round|sgn|sin|sqrt|tan|urand)[(]*\b
+  name: storage.type.function.f3dat
 - match: (;)(?!\{).*$\n?
   name: comment.language.f3dat
 - match: \s*(=|\*|\+|\^|\-|\/|\#)\s*
