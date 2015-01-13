@@ -14,7 +14,13 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(zone_head|z_extra|z_model|z_group|z_prop|z_next)\b</string>
+			<string>\b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore) \b</string>
+			<key>name</key>
+			<string>constant.language.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next|atan|exp|degrad|sqrt)\b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
 		</dict>

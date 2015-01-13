@@ -9,7 +9,9 @@ fileTypes:
 uuid: a4358a63-d396-4e0c-9b3d-f0de59021e43
 
 patterns:
-- match: \b(zone_head|z_extra|z_model|z_group|z_prop|z_next)\b
+- match: \b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore) \b
+  name: constant.language.f3dat
+- match: \b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next|atan|exp|degrad|sqrt)\b
   name: constant.language.f3dat
 - match: \b(plot|list|step)\b
   name: constant.language.f3dat
