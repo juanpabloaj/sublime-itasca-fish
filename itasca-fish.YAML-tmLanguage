@@ -23,9 +23,9 @@ patterns:
   name: constant.language.f3dat
 - match: \b(command|end_command|end|for|end_for|if|then|end_if|loop while|end_loop)\b
   name: keyword.language.f3dat
-- match: \b\s*(abs|acos|and|asin|atan|atan2|cos|degrad|exp|grand|ln|log)[(]*\b
+- match: \b\s*(abs|acos|and|asin|atan|atan2|cos|degrad|exp|grand|ln|log)\b
   name: storage.type.function.f3dat
-- match: \b\s*(max|min|not|or|pi|round|sgn|sin|sqrt|tan|urand)[(]*\b
+- match: \b\s*(max|min|not|or|pi|round|sgn|sin|sqrt|tan|urand)\b
   name: storage.type.function.f3dat
 - match: (;)(?!\{).*$\n?
   name: comment.language.f3dat

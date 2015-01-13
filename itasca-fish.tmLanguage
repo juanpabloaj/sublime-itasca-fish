@@ -56,13 +56,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b\s*(abs|acos|and|asin|atan|atan2|cos|degrad|exp|grand|ln|log)[(]*\b</string>
+			<string>\b\s*(abs|acos|and|asin|atan|atan2|cos|degrad|exp|grand|ln|log)\b</string>
 			<key>name</key>
 			<string>storage.type.function.f3dat</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b\s*(max|min|not|or|pi|round|sgn|sin|sqrt|tan|urand)[(]*\b</string>
+			<string>\b\s*(max|min|not|or|pi|round|sgn|sin|sqrt|tan|urand)\b</string>
 			<key>name</key>
 			<string>storage.type.function.f3dat</string>
 		</dict>
