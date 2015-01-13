@@ -14,6 +14,24 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>\b(?i:(\d+\.\d*(e[\-\+]?\d+)?))(?=[^a-zA-Z_])</string>
+			<key>name</key>
+			<string>constant.numeric.float.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:(\d+e[\-\+]?\d+))</string>
+			<key>name</key>
+			<string>constant.numeric.float.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([1-9]+[0-9]*|0)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.decimal.f3dat</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore) \b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
