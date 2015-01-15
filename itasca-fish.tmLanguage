@@ -44,7 +44,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b^\s*(model|plot|list|step|local|group)\b</string>
+			<string>\b^\s*(model|plot|list|step|local|group|system)\b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
 		</dict>
