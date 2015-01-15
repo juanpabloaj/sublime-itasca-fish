@@ -19,7 +19,7 @@ patterns:
   name: constant.language.f3dat
 - match: \b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next)\b
   name: constant.language.f3dat
-- match: \b^\s*(model|plot|list|step|local)\b
+- match: \b^\s*(model|plot|list|step|local|group)\b
   name: constant.language.f3dat
 - match: \b(command|end_command|end|for|end_for|if|then|end_if|loop while|end_loop)\b
   name: keyword.language.f3dat
