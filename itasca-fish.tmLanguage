@@ -32,7 +32,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore) \b</string>
+			<string>\b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore|geometry)\b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
 		</dict>

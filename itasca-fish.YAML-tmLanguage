@@ -15,7 +15,7 @@ patterns:
   name: constant.numeric.float.f3dat
 - match: \b([1-9]+[0-9]*|0)
   name: constant.numeric.integer.decimal.f3dat
-- match: \b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore) \b
+- match: \b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore|geometry)\b
   name: constant.language.f3dat
 - match: \b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next)\b
   name: constant.language.f3dat
