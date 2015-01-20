@@ -38,7 +38,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next)\b</string>
+			<string>\b(pause|null)\b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
 		</dict>
@@ -118,6 +118,63 @@
 			</dict>
 			<key>match</key>
 			<string>(def)\s+([\w+_]+)$\n?</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.f3dat</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.f3dat</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(gp_extra|gp_next|gp_xload|gp_xfunbal|gp_yload|gp_yfunbal|gp_zload|gp_zfunbal)\(([a-zA-Z0-9,_]*)\)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.f3dat</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.f3dat</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(gp_zfapp|gp_zpos|gp_linkzone|gp_linkindex|z_model|z_extra|gp_zvel)\(([a-zA-Z0-9,_]*)\)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.f3dat</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.f3dat</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(z_linkzone|z_linkindex|z_join|z_group|z_prop|z_next|z_sig3|z_pp)\(([a-zA-Z0-9,_']*)\)</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(gp_head|zone_head|mech_ratio)\b</string>
+			<key>name</key>
+			<string>entity.name.function.f3dat</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

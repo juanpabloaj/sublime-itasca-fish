@@ -17,7 +17,7 @@ patterns:
   name: constant.numeric.integer.decimal.f3dat
 - match: ^\s*\b(fix|water|set|call|impgrid|solve|save|new|initial|restore|geometry)\b
   name: constant.language.f3dat
-- match: \b(null|zone_head|z_extra|z_model|z_group|z_prop|z_next)\b
+- match: \b(pause|null)\b
   name: constant.language.f3dat
 - match: ^\s*\b(model|plot|list|step|local|group|system|range)\b
   name: constant.language.f3dat
@@ -43,3 +43,17 @@ patterns:
   captures:
     '1': {name: keyword.language.f3dat}
     '2': {name: storage.type.function.f3dat}
+- match: (gp_extra|gp_next|gp_xload|gp_xfunbal|gp_yload|gp_yfunbal|gp_zload|gp_zfunbal)\(([a-zA-Z0-9,_]*)\)
+  captures:
+    '1': {name: entity.name.function.f3dat}
+    '2': {name: variable.parameter.function.f3dat}
+- match: (gp_zfapp|gp_zpos|gp_linkzone|gp_linkindex|z_model|z_extra|gp_zvel)\(([a-zA-Z0-9,_]*)\)
+  captures:
+    '1': {name: entity.name.function.f3dat}
+    '2': {name: variable.parameter.function.f3dat}
+- match: (z_linkzone|z_linkindex|z_join|z_group|z_prop|z_next|z_sig3|z_pp)\(([a-zA-Z0-9,_']*)\)
+  captures:
+    '1': {name: entity.name.function.f3dat}
+    '2': {name: variable.parameter.function.f3dat}
+- match: \b(gp_head|zone_head|mech_ratio)\b
+  name: entity.name.function.f3dat
