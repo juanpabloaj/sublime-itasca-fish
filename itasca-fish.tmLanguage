@@ -168,7 +168,41 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(z_linkzone|z_linkindex|z_join|z_group|z_prop|z_next|z_sig3|z_pp)\(([a-zA-Z0-9,_']*)\)</string>
+			<string>(z_linkzone|z_linkindex|z_join|z_group|z_prop|z_next|z_pp)\(([a-zA-Z0-9,_']*)\)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.f3dat</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.f3dat</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(z_state|z_gp|z_sig1|z_sig2|z_sig3|z_sxx|z_syy|z_szz)\(([a-zA-Z0-9,_']*)\)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.f3dat</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.f3dat</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(z_sxy|z_sxz|z_syz)\(([a-zA-Z0-9,_']*)\)</string>
 		</dict>
 		<dict>
 			<key>match</key>
