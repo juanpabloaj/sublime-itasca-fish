@@ -32,7 +32,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b^\s*(fix|water|set|call|impgrid|solve|save|new|initial|restore|geometry)\b</string>
+			<string>^\s*\b(fix|water|set|call|impgrid|solve|save|new|initial|restore|geometry)\b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
 		</dict>
@@ -44,7 +44,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b^\s*(model|plot|list|step|local|group|system)\b</string>
+			<string>^\s*\b(model|plot|list|step|local|group|system|range)\b</string>
 			<key>name</key>
 			<string>constant.language.f3dat</string>
 		</dict>
